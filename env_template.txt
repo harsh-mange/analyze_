@@ -1,0 +1,28 @@
+# Stock Analyzer Production Configuration
+# Copy this file to .env and modify as needed
+
+# Server Configuration
+STREAMLIT_SERVER_PORT=8501
+STREAMLIT_SERVER_ADDRESS=0.0.0.0
+STREAMLIT_SERVER_HEADLESS=true
+
+# Security Settings
+STREAMLIT_SERVER_ENABLE_CORS=true
+STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION=true
+STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+
+# Application Settings
+DEFAULT_STOCK_SYMBOL=RELIANCE.NS
+HISTORICAL_DAYS=60
+LOG_LEVEL=INFO
+
+# API Settings
+YAHOO_FINANCE_TIMEOUT=30
+MAX_RETRIES=3
+
+# Performance Settings
+CACHE_TTL=300
+MAX_CONCURRENT_REQUESTS=10
+
+# Debug Mode (set to false in production)
+ENABLE_DEBUG=false
